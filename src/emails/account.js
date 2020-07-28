@@ -7,7 +7,7 @@ const sendWelcomeEmail = (email, name) => {
     to: email,
     from: 'ultimaxx@hotmail.com',
     subject: 'Thanks for joining in!',
-    text: `Welcome to the app ${name}. How do you get along?`
+    text: `Welcome to the app ${name}. How do you get along?`,
   })
 }
 
@@ -16,11 +16,11 @@ const sendGoodbyeEmail = (email, name) => {
     to: email,
     from: 'ultimaxx@hotmail.com',
     subject: `We're sorry you're leaving`,
-    text: `Goodbye ${name}. Is there anything we could have to keep you around?`
+    text: `Goodbye ${name}. Is there anything we could have to keep you around?`,
   })
 }
 
 module.exports = {
   sendWelcomeEmail,
-  sendGoodbyeEmail
+  sendGoodbyeEmail,
 }
